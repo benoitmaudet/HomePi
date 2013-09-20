@@ -1,3 +1,8 @@
+import homepi.HomePi;
+import homepi.Notification;
+
+import java.util.Date;
+
 /**
  * HomePi
  * Author: Benoît Maudet
@@ -11,15 +16,10 @@ public class Playground {
 
     }
 
-    public void firstMethod(){
-
-    }
-
-    public void secondMethod(){
-
-    }
-
     public static void main(String[] args) {
-
+        System.out.println("Hello world !");
+        HomePi homePi = new HomePi();
+        Notification notification = new Notification(1,"Nouvelle notification", new Date(),1);
+        homePi.getNotificationSystem().addNotification(notification);
     }
 }
