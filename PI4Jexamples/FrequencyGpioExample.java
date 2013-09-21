@@ -36,7 +36,7 @@ import com.pi4j.io.gpio.PinState;
 import com.pi4j.io.gpio.RaspiPin;
 
 /**
- * This example code provides a continuous GPIO pin state 
+ * This example code provides a continuous raspberrypi.GPIO pin state
  * changes on the Raspberry Pi to allow measurement of
  * frequency.  
  * 
@@ -46,7 +46,7 @@ public class FrequencyGpioExample {
     
     public static void main(String[] args) {
         
-        System.out.println("<--Pi4J--> GPIO Frequency Example ... started.");
+        System.out.println("<--Pi4J--> raspberrypi.GPIO Frequency Example ... started.");
         
         // create gpio controller
         final GpioController gpio = GpioFactory.getInstance();
@@ -60,9 +60,9 @@ public class FrequencyGpioExample {
             pin.setState(false);
         }
         
-        // stop all GPIO activity/threads by shutting down the GPIO controller
-        // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
-        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J GPIO controller        
+        // stop all raspberrypi.GPIO activity/threads by shutting down the raspberrypi.GPIO controller
+        // (this method will forcefully shutdown all raspberrypi.GPIO monitoring threads and scheduled tasks)
+        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J raspberrypi.GPIO controller
     }
 }
 //END SNIPPET: frequency-gpio-snippet

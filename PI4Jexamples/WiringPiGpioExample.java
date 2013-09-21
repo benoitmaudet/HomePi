@@ -50,23 +50,23 @@ public class WiringPiGpioExample {
         int dataPtr;
         int l, s, d;
         
-        System.out.println("<--Pi4J--> GPIO test program");
+        System.out.println("<--Pi4J--> raspberrypi.GPIO test program");
 
         // setup wiringPi
         if (Gpio.wiringPiSetup() == -1) {
-            System.out.println(" ==>> GPIO SETUP FAILED");
+            System.out.println(" ==>> raspberrypi.GPIO SETUP FAILED");
             return;
         }
 
-        // set GPIO 4 as the input trigger 
+        // set raspberrypi.GPIO 4 as the input trigger
         GpioUtil.export(7, GpioUtil.DIRECTION_IN);
         GpioUtil.setEdgeDetection(7, GpioUtil.EDGE_BOTH);
         Gpio.pinMode (7, Gpio.INPUT) ;  
         Gpio.pullUpDnControl(7, Gpio.PUD_DOWN);        
 
-        // set all other GPIO as outputs
+        // set all other raspberrypi.GPIO as outputs
         for (pin = 0; pin < 7; ++pin) {
-            // export all the GPIO pins that we will be using
+            // export all the raspberrypi.GPIO pins that we will be using
             GpioUtil.export(pin, GpioUtil.DIRECTION_OUT);            
             Gpio.pinMode(pin, Gpio.OUTPUT);
         }

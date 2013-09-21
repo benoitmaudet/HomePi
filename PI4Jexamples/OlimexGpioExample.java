@@ -43,11 +43,12 @@ import com.pi4j.io.gpio.trigger.GpioPulseStateTrigger;
 import com.pi4j.io.gpio.trigger.GpioSetStateTrigger;
 import com.pi4j.io.gpio.trigger.GpioSyncStateTrigger;
 import com.pi4j.io.serial.Serial;
+import homepi.System;
 
 /**
  * <p>
  * This example code demonstrates how to setup a custom GpioProvider
- * for GPIO pin state control and monitoring.
+ * for raspberrypi.GPIO pin state control and monitoring.
  * </p>  
  * 
  * <p>
@@ -68,7 +69,7 @@ public class OlimexGpioExample {
     
     public static void main(String args[]) throws InterruptedException {
 
-        System.out.println("<--Pi4J--> GPIO Listen Example ... started.");
+        homepi.System.out.println("<--Pi4J--> raspberrypi.GPIO Listen Example ... started.");
         
         // create gpio controller
         final GpioController gpio = GpioFactory.getInstance();
@@ -76,7 +77,7 @@ public class OlimexGpioExample {
         // provision gpio pin #02 as an input pin with its internal pull down resistor enabled
         final GpioPinDigitalInput myButton = gpio.provisionDigitalInputPin(RaspiPin.GPIO_02, PinPullResistance.PULL_DOWN);
 
-        // create custom Olimex GPIO provider
+        // create custom Olimex raspberrypi.GPIO provider
         final OlimexAVRIOGpioProvider olimexProvider = new OlimexAVRIOGpioProvider(Serial.DEFAULT_COM_PORT);
         
         // provision gpio input pin #01 from Olimex
@@ -87,7 +88,7 @@ public class OlimexGpioExample {
             @Override
             public void handleGpioPinDigitalStateChangeEvent(GpioPinDigitalStateChangeEvent event) {
                 // display pin state on console
-                System.out.println(" --> GPIO PIN STATE CHANGE: " + event.getPin() + " = "
+                System.out.println(" --> raspberrypi.GPIO PIN STATE CHANGE: " + event.getPin() + " = "
                         + event.getState());
             }
         };
@@ -119,7 +120,7 @@ public class OlimexGpioExample {
         // create a gpio pulse trigger on the input pin; when the input goes HIGH, also pulse gpio pin #06 to the HIGH state for 1 second
         myButton.addTrigger(new GpioPulseStateTrigger(PinState.HIGH, myRelays[3], 1000));
 
-        System.out.println(" ... complete the GPIO #02 circuit and see the listener feedback here in the console.");
+        System.out.println(" ... complete the raspberrypi.GPIO #02 circuit and see the listener feedback here in the console.");
         
         // keep program running until user aborts (CTRL-C)
         // or we reach 60 seconds
@@ -129,8 +130,8 @@ public class OlimexGpioExample {
         
         System.out.println(" ... exiting program.");
         
-        // stop all GPIO activity/threads by shutting down the GPIO controller
-        // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
+        // stop all raspberrypi.GPIO activity/threads by shutting down the raspberrypi.GPIO controller
+        // (this method will forcefully shutdown all raspberrypi.GPIO monitoring threads and scheduled tasks)
         gpio.shutdown();                 
     }
 }

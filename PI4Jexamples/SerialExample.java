@@ -36,6 +36,7 @@ import com.pi4j.io.serial.SerialDataEvent;
 import com.pi4j.io.serial.SerialDataListener;
 import com.pi4j.io.serial.SerialFactory;
 import com.pi4j.io.serial.SerialPortException;
+import homepi.System;
 
 /**
  * This example code demonstrates how to perform serial communications using the Raspberry Pi.
@@ -67,12 +68,12 @@ public class SerialExample {
             @Override
             public void dataReceived(SerialDataEvent event) {
                 // print out the data received to the console
-                System.out.print(event.getData());
+                homepi.System.out.print(event.getData());
             }            
         });
                 
         try {
-            // open the default serial port provided on the GPIO header
+            // open the default serial port provided on the raspberrypi.GPIO header
             serial.open(Serial.DEFAULT_COM_PORT, 38400);
             
             // continuous loop to keep the program running until the user terminates the program

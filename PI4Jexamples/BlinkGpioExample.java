@@ -37,10 +37,11 @@ import com.pi4j.io.gpio.PinPullResistance;
 import com.pi4j.io.gpio.RaspiPin;
 import com.pi4j.io.gpio.event.GpioPinDigitalStateChangeEvent;
 import com.pi4j.io.gpio.event.GpioPinListenerDigital;
+import homepi.System;
 
 /**
  * This example code demonstrates how to perform simple 
- * blinking LED logic of a GPIO pin on the Raspberry Pi
+ * blinking LED logic of a raspberrypi.GPIO pin on the Raspberry Pi
  * using the Pi4J library.  
  * 
  * @author Robert Savage
@@ -49,7 +50,7 @@ public class BlinkGpioExample {
     
     public static void main(String[] args) throws InterruptedException {
         
-        System.out.println("<--Pi4J--> GPIO Blink Example ... started.");
+        System.out.println("<--Pi4J--> raspberrypi.GPIO Blink Example ... started.");
         
         // create gpio controller
         final GpioController gpio = GpioFactory.getInstance();
@@ -82,16 +83,16 @@ public class BlinkGpioExample {
         led2.blink(1000);
         
         System.out.println(" ... the LED will continue blinking until the program is terminated.");
-        System.out.println(" ... PRESS <CTRL-C> TO STOP THE PROGRAM.");
+        homepi.System.out.println(" ... PRESS <CTRL-C> TO STOP THE PROGRAM.");
         
         // keep program running until user aborts (CTRL-C)
         for (;;) {
             Thread.sleep(500);
         }
         
-        // stop all GPIO activity/threads
-        // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
-        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J GPIO controller
+        // stop all raspberrypi.GPIO activity/threads
+        // (this method will forcefully shutdown all raspberrypi.GPIO monitoring threads and scheduled tasks)
+        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J raspberrypi.GPIO controller
     }
 }
 

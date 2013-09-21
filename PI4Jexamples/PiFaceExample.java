@@ -38,11 +38,12 @@ import com.pi4j.device.piface.PiFaceRelay;
 import com.pi4j.device.piface.PiFaceSwitch;
 import com.pi4j.device.piface.impl.PiFaceDevice;
 import com.pi4j.wiringpi.Spi;
+import homepi.System;
 
 /**
  * <p>
  * This example code demonstrates how to use the PiFace device interface
- * for GPIO pin state control and monitoring.
+ * for raspberrypi.GPIO pin state control and monitoring.
  * </p>  
  * 
  * @author Robert Savage
@@ -53,7 +54,7 @@ public class PiFaceExample {
     
     public static void main(String args[]) throws InterruptedException, IOException {
         
-        System.out.println("<--Pi4J--> Pi-Face GPIO Example ... started.");
+        System.out.println("<--Pi4J--> Pi-Face raspberrypi.GPIO Example ... started.");
         
         // create the Pi-Face controller
         final PiFace piface = new PiFaceDevice(PiFace.DEFAULT_ADDRESS, Spi.CHANNEL_0);
@@ -67,7 +68,7 @@ public class PiFaceExample {
             @Override
             public void onStateChange(SwitchStateChangeEvent event) {
                 if(event.getNewState() == SwitchState.ON){
-                    System.out.println("[SWITCH S1 PRESSED ] Turn RELAY-K0 <ON>");
+                    homepi.System.out.println("[SWITCH S1 PRESSED ] Turn RELAY-K0 <ON>");
                     piface.getRelay(PiFaceRelay.K0).close(); // turn on relay
                 }
                 else{
@@ -149,8 +150,8 @@ public class PiFaceExample {
             }            
         }
         
-        // stop all GPIO activity/threads by shutting down the GPIO controller
-        // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
+        // stop all raspberrypi.GPIO activity/threads by shutting down the raspberrypi.GPIO controller
+        // (this method will forcefully shutdown all raspberrypi.GPIO monitoring threads and scheduled tasks)
         //gpio.shutdown();  // <-- uncomment if your program terminates
     }
 }

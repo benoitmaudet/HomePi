@@ -42,9 +42,10 @@ import com.pi4j.io.gpio.trigger.GpioCallbackTrigger;
 import com.pi4j.io.gpio.trigger.GpioPulseStateTrigger;
 import com.pi4j.io.gpio.trigger.GpioSetStateTrigger;
 import com.pi4j.io.gpio.trigger.GpioSyncStateTrigger;
+import homepi.System;
 
 /**
- * This example code demonstrates how to setup simple triggers for GPIO pins on the Raspberry Pi.
+ * This example code demonstrates how to setup simple triggers for raspberrypi.GPIO pins on the Raspberry Pi.
  * 
  * @author Robert Savage
  */
@@ -52,7 +53,7 @@ public class TriggerGpioExample {
     
     public static void main(String[] args) throws InterruptedException {
         
-        System.out.println("<--Pi4J--> GPIO Trigger Example ... started.");
+        homepi.System.out.println("<--Pi4J--> raspberrypi.GPIO Trigger Example ... started.");
 
         // create gpio controller
         final GpioController gpio = GpioFactory.getInstance();
@@ -61,7 +62,7 @@ public class TriggerGpioExample {
         final GpioPinDigitalInput myButton = gpio.provisionDigitalInputPin(RaspiPin.GPIO_02, 
                                                   PinPullResistance.PULL_DOWN);
         
-        System.out.println(" ... complete the GPIO #02 circuit and see the triggers take effect.");
+        System.out.println(" ... complete the raspberrypi.GPIO #02 circuit and see the triggers take effect.");
         
         // setup gpio pins #04, #05, #06 as an output pins and make sure they are all LOW at startup
         GpioPinDigitalOutput myLed[] = { 
@@ -86,7 +87,7 @@ public class TriggerGpioExample {
         // invocation on the user defined 'Callable' class instance
         myButton.addTrigger(new GpioCallbackTrigger(new Callable<Void>() {
             public Void call() throws Exception {
-                System.out.println(" --> GPIO TRIGGER CALLBACK RECEIVED ");
+                System.out.println(" --> raspberrypi.GPIO TRIGGER CALLBACK RECEIVED ");
                 return null;
             }
         }));
@@ -96,9 +97,9 @@ public class TriggerGpioExample {
             Thread.sleep(500);
         }
 
-        // stop all GPIO activity/threads by shutting down the GPIO controller
-        // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
-        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J GPIO controller        
+        // stop all raspberrypi.GPIO activity/threads by shutting down the raspberrypi.GPIO controller
+        // (this method will forcefully shutdown all raspberrypi.GPIO monitoring threads and scheduled tasks)
+        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J raspberrypi.GPIO controller
     }
 }
 // END SNIPPET: trigger-gpio-snippet

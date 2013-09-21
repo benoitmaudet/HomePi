@@ -34,10 +34,11 @@ import com.pi4j.io.gpio.GpioFactory;
 import com.pi4j.io.gpio.GpioPinDigitalOutput;
 import com.pi4j.io.gpio.PinState;
 import com.pi4j.io.gpio.RaspiPin;
+import homepi.System;
 
 /**
  * This example code demonstrates how to perform a blinking cycle 
- * (cylon effect) of a series of GPIO pins on the Raspberry Pi.  
+ * (cylon effect) of a series of raspberrypi.GPIO pins on the Raspberry Pi.
  * 
  * @author Robert Savage
  */
@@ -45,7 +46,7 @@ public class CylonGpioExample {
     
     public static void main(String[] args) throws InterruptedException {
         
-        System.out.println("<--Pi4J--> GPIO Cylon Example ... started.");
+        System.out.println("<--Pi4J--> raspberrypi.GPIO Cylon Example ... started.");
         
         // create gpio controller
         final GpioController gpio = GpioFactory.getInstance();
@@ -60,7 +61,7 @@ public class CylonGpioExample {
                 gpio.provisionDigitalOutputPin(RaspiPin.GPIO_05, PinState.LOW),
                 gpio.provisionDigitalOutputPin(RaspiPin.GPIO_06, PinState.LOW),
                 gpio.provisionDigitalOutputPin(RaspiPin.GPIO_07, PinState.LOW)};
-        System.out.println("--> GPIO state should be: ON");
+        homepi.System.out.println("--> raspberrypi.GPIO state should be: ON");
 
         // set shutdown options on all pins
         gpio.setShutdownOptions(true, PinState.LOW, pins);
@@ -79,9 +80,9 @@ public class CylonGpioExample {
             }
         }
         
-        // stop all GPIO activity/threads by shutting down the GPIO controller
-        // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
-        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J GPIO controller        
+        // stop all raspberrypi.GPIO activity/threads by shutting down the raspberrypi.GPIO controller
+        // (this method will forcefully shutdown all raspberrypi.GPIO monitoring threads and scheduled tasks)
+        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J raspberrypi.GPIO controller
     }
 }
 //END SNIPPET: cylon-gpio-snippet

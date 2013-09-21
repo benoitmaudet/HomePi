@@ -1,4 +1,7 @@
 #!/bin/bash
-rm install.sh
+if [ -f install.sh ]
+then
+ rm install.sh
+fi
 git pull
 chmod +x install.sh

@@ -1,4 +1,6 @@
+import homepi.System;
 
+x
 /*
  * #%L
  * **********************************************************************
@@ -43,7 +45,7 @@ public class WiringPiLcdExample {
 
         // setup wiringPi
         if (Gpio.wiringPiSetup() == -1) {
-            System.out.println(" ==>> GPIO SETUP FAILED");
+            homepi.System.out.println(" ==>> raspberrypi.GPIO SETUP FAILED");
             return;
         }
 

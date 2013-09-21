@@ -26,6 +26,7 @@
  */
 
 import com.pi4j.wiringpi.Spi;
+import homepi.System;
 
 public class example {
 
@@ -79,12 +80,12 @@ public class example {
         packet[1] = 0x00;  // dummy
            
         System.out.println("-----------------------------------------------");
-        System.out.println("[TX] " + bytesToHex(packet));
+        homepi.System.out.println("[TX] " + bytesToHex(packet));
         Spi.wiringPiSPIDataRW(SPI_CHANNEL, packet, 2);        
         System.out.println("[RX] " + bytesToHex(packet));
         System.out.println("-----------------------------------------------");
         
-        //System.out.println(( (packet[0]<<7) | (packet[1]>>1) ) & 0x3FF);
+        //homepi.System.out.println(( (packet[0]<<7) | (packet[1]>>1) ) & 0x3FF);
         System.out.println( ((packet[0]<<8)|packet[1]) & 0x3FF );
         
     }

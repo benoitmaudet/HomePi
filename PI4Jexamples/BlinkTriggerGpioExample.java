@@ -37,9 +37,10 @@ import com.pi4j.io.gpio.PinState;
 import com.pi4j.io.gpio.RaspiPin;
 import com.pi4j.io.gpio.trigger.GpioBlinkStateTrigger;
 import com.pi4j.io.gpio.trigger.GpioBlinkStopStateTrigger;
+import homepi.System;
 
 /**
- * This example code demonstrates how to setup blinking triggers for GPIO pins on the Raspberry Pi.
+ * This example code demonstrates how to setup blinking triggers for raspberrypi.GPIO pins on the Raspberry Pi.
  * 
  * @author Robert Savage
  */
@@ -47,7 +48,7 @@ public class BlinkTriggerGpioExample {
     
     public static void main(String[] args) throws InterruptedException {
         
-        System.out.println("<--Pi4J--> GPIO Blink Trigger Example ... started.");
+        System.out.println("<--Pi4J--> raspberrypi.GPIO Blink Trigger Example ... started.");
 
         // create gpio controller
         final GpioController gpio = GpioFactory.getInstance();
@@ -56,7 +57,7 @@ public class BlinkTriggerGpioExample {
         final GpioPinDigitalInput myButton = gpio.provisionDigitalInputPin(RaspiPin.GPIO_02, 
                                                   PinPullResistance.PULL_DOWN);
         
-        System.out.println(" ... complete the GPIO #02 circuit and see the blink trigger take effect.");
+        homepi.System.out.println(" ... complete the raspberrypi.GPIO #02 circuit and see the blink trigger take effect.");
         
         // setup gpio pins #04 an output pins and make sure they are all LOW at startup
         final GpioPinDigitalOutput myLed = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_04, PinState.LOW);
@@ -72,9 +73,9 @@ public class BlinkTriggerGpioExample {
             Thread.sleep(500);
         }
         
-        // stop all GPIO activity/threads by shutting down the GPIO controller
-        // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
-        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J GPIO controller        
+        // stop all raspberrypi.GPIO activity/threads by shutting down the raspberrypi.GPIO controller
+        // (this method will forcefully shutdown all raspberrypi.GPIO monitoring threads and scheduled tasks)
+        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J raspberrypi.GPIO controller
     }
 }
 // END SNIPPET: blink-trigger-gpio-snippet

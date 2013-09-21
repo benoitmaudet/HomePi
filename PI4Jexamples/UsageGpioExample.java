@@ -52,7 +52,7 @@ import com.pi4j.io.gpio.event.PinEventType;
 // END SNIPPET: usage-import-snippet
 
 /**
- * This example code demonstrates how to setup simple triggers for GPIO pins on the Raspberry Pi.
+ * This example code demonstrates how to setup simple triggers for raspberrypi.GPIO pins on the Raspberry Pi.
  * 
  * @author Robert Savage
  */
@@ -106,7 +106,7 @@ public class UsageGpioExample {
         // END SNIPPET: usage-control-pin-snippet
 
         // START SNIPPET: usage-read-pin-snippet
-        // get explicit state enumeration for the GPIO pin associated with the button
+        // get explicit state enumeration for the raspberrypi.GPIO pin associated with the button
         PinState myButtonState = myButton.getState();
 
         // use convenience wrapper method to interrogate the button state
@@ -129,9 +129,9 @@ public class UsageGpioExample {
             Thread.sleep(500);
         }
         
-        // stop all GPIO activity/threads by shutting down the GPIO controller
-        // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
-        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J GPIO controller                
+        // stop all raspberrypi.GPIO activity/threads by shutting down the raspberrypi.GPIO controller
+        // (this method will forcefully shutdown all raspberrypi.GPIO monitoring threads and scheduled tasks)
+        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J raspberrypi.GPIO controller
     }
 
  //START SNIPPET: usage-listener-snippet    
@@ -139,7 +139,7 @@ public class UsageGpioExample {
         @Override
         public void handleGpioPinDigitalStateChangeEvent(GpioPinDigitalStateChangeEvent event) {
             // display pin state on console
-            System.out.println(" --> GPIO PIN STATE CHANGE: " + event.getPin() + " = "
+            System.out.println(" --> raspberrypi.GPIO PIN STATE CHANGE: " + event.getPin() + " = "
                     + event.getState());
         }
     }

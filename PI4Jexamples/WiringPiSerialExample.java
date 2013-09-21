@@ -26,6 +26,7 @@
  * #L%
  */
 import com.pi4j.wiringpi.Serial;
+import homepi.System;
 
 public class WiringPiSerialExample {
     
@@ -36,7 +37,7 @@ public class WiringPiSerialExample {
         // open serial port for communication
         int fd = Serial.serialOpen(Serial.DEFAULT_COM_PORT, 38400);
         if (fd == -1) {
-            System.out.println(" ==>> SERIAL SETUP FAILED");
+            homepi.System.out.println(" ==>> SERIAL SETUP FAILED");
             return;
         }
 
@@ -50,7 +51,7 @@ public class WiringPiSerialExample {
             int dataavail = Serial.serialDataAvail(fd);            
             while(dataavail > 0) {
                 int data = Serial.serialGetchar(fd);
-                System.out.print((char)data);                
+                System.out.print((char)data);
                 dataavail = Serial.serialDataAvail(fd);
             }
             

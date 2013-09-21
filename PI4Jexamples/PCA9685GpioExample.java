@@ -34,11 +34,12 @@ import com.pi4j.io.gpio.GpioFactory;
 import com.pi4j.io.gpio.GpioPinPwmOutput;
 import com.pi4j.io.gpio.Pin;
 import com.pi4j.io.i2c.I2CBus;
+import homepi.System;
 
 /**
  * <p>
  * This example code demonstrates how to setup a custom GpioProvider
- * for GPIO PWM pin control using the PCA9685 16-channel, 12-bit PWM I2C-bus LED/Servo controller.
+ * for raspberrypi.GPIO PWM pin control using the PCA9685 16-channel, 12-bit PWM I2C-bus LED/Servo controller.
  * </p>
  * <p>
  * More information about the PCA9685 can be found here:<br>
@@ -68,7 +69,7 @@ public class PCA9685GpioExample {
         // Calculate correction factor: 51.65 / 48.828 = 1.0578
         // --> To measure actual frequency set frequency without correction factor(or set to 1)
         BigDecimal frequencyCorrectionFactor = new BigDecimal("1.0578");
-        // Create custom PCA9685 GPIO provider
+        // Create custom PCA9685 raspberrypi.GPIO provider
         final PCA9685GpioProvider gpioProvider = new PCA9685GpioProvider(I2CBus.BUS_1, 0x40, frequency, frequencyCorrectionFactor);
         // Define outputs in use for this example
         GpioPinPwmOutput[] myOutputs = provisionPwmOutputs(gpioProvider);
@@ -98,7 +99,7 @@ public class PCA9685GpioExample {
         // Show PWM values for outputs 0..14
         for (GpioPinPwmOutput output : myOutputs) {
             int[] onOffValues = gpioProvider.getPwmOnOffValues(output.getPin());
-            System.out.println(output.getPin().getName() + " (" + output.getName() + "): ON value [" + onOffValues[0] + "], OFF value [" + onOffValues[1] + "]");
+            homepi.System.out.println(output.getPin().getName() + " (" + output.getName() + "): ON value [" + onOffValues[0] + "], OFF value [" + onOffValues[1] + "]");
         }
         System.out.println("Press <Enter> to terminate...");
         new Scanner(System.in).nextLine();

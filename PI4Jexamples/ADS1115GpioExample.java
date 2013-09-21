@@ -39,10 +39,11 @@ import com.pi4j.io.gpio.GpioPinAnalogInput;
 import com.pi4j.io.gpio.event.GpioPinAnalogValueChangeEvent;
 import com.pi4j.io.gpio.event.GpioPinListenerAnalog;
 import com.pi4j.io.i2c.I2CBus;
+import homepi.System;
 
 /**
  * <p>
- * This example code demonstrates how to use the ADS1115 Pi4J GPIO interface
+ * This example code demonstrates how to use the ADS1115 Pi4J raspberrypi.GPIO interface
  * for analog input pins.
  * </p>  
  * 
@@ -53,7 +54,7 @@ public class ADS1115GpioExample {
     
     public static void main(String args[]) throws InterruptedException, IOException {
         
-        System.out.println("<--Pi4J--> ADS1115 GPIO Example ... started.");
+        homepi.System.out.println("<--Pi4J--> ADS1115 raspberrypi.GPIO Example ... started.");
 
         // number formatters
         final DecimalFormat df = new DecimalFormat("#.##");
@@ -62,7 +63,7 @@ public class ADS1115GpioExample {
         // create gpio controller
         final GpioController gpio = GpioFactory.getInstance();
         
-        // create custom ADS1115 GPIO provider
+        // create custom ADS1115 raspberrypi.GPIO provider
         final ADS1115GpioProvider gpioProvider = new ADS1115GpioProvider(I2CBus.BUS_1, ADS1115GpioProvider.ADS1115_ADDRESS_0x48);
         
         // provision gpio analog input pins from ADS1115
@@ -126,12 +127,12 @@ public class ADS1115GpioExample {
         for (int count = 0; count < 600; count++) {
 
             // display output
-            //System.out.print("\r ANALOG VALUE (FOR INPUT A0) : VOLTS=" + df.format(voltage) + "  | PERCENT=" + pdf.format(percent) + "% | RAW=" + value + "       ");
+            //homepi.System.out.print("\r ANALOG VALUE (FOR INPUT A0) : VOLTS=" + df.format(voltage) + "  | PERCENT=" + pdf.format(percent) + "% | RAW=" + value + "       ");
             Thread.sleep(1000);
         }
         
-        // stop all GPIO activity/threads by shutting down the GPIO controller
-        // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
+        // stop all raspberrypi.GPIO activity/threads by shutting down the raspberrypi.GPIO controller
+        // (this method will forcefully shutdown all raspberrypi.GPIO monitoring threads and scheduled tasks)
         gpio.shutdown();
         System.out.print("");
         System.out.print("");

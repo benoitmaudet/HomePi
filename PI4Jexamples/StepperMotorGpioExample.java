@@ -31,10 +31,11 @@ import com.pi4j.io.gpio.GpioFactory;
 import com.pi4j.io.gpio.GpioPinDigitalOutput;
 import com.pi4j.io.gpio.PinState;
 import com.pi4j.io.gpio.RaspiPin;
+import homepi.System;
 
 /**
  * This example code demonstrates how to control a stepper motor
- * using the GPIO pins on the Raspberry Pi.  
+ * using the raspberrypi.GPIO pins on the Raspberry Pi.
  * 
  * @author Robert Savage
  */
@@ -42,7 +43,7 @@ public class StepperMotorGpioExample {
     
     public static void main(String[] args) throws InterruptedException {
         
-        System.out.println("<--Pi4J--> GPIO Stepper Motor Example ... started.");
+        System.out.println("<--Pi4J--> raspberrypi.GPIO Stepper Motor Example ... started.");
         
         // create gpio controller
         final GpioController gpio = GpioFactory.getInstance();
@@ -139,7 +140,7 @@ public class StepperMotorGpioExample {
         // test motor control : TIMED REVERSE
         System.out.println("   Motor REVERSE for 5 seconds.");
         motor.reverse(5000);
-        System.out.println("   Motor STOPPED for 2 seconds.");
+        homepi.System.out.println("   Motor STOPPED for 2 seconds.");
         Thread.sleep(2000);
         
         // test motor control : ROTATE FORWARD with different timing and sequence
@@ -152,8 +153,8 @@ public class StepperMotorGpioExample {
         // final stop to ensure no motor activity
         motor.stop();
 
-        // stop all GPIO activity/threads by shutting down the GPIO controller
-        // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
+        // stop all raspberrypi.GPIO activity/threads by shutting down the raspberrypi.GPIO controller
+        // (this method will forcefully shutdown all raspberrypi.GPIO monitoring threads and scheduled tasks)
         gpio.shutdown();        
     }
 }

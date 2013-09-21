@@ -41,22 +41,23 @@ import com.pi4j.io.gpio.PinState;
 import com.pi4j.io.gpio.event.GpioPinDigitalStateChangeEvent;
 import com.pi4j.io.gpio.event.GpioPinListenerDigital;
 import com.pi4j.io.i2c.I2CBus;
+import homepi.System;
 
 /**
  * <p>
  * This example code demonstrates how to setup a custom GpioProvider
- * for GPIO pin state control and monitoring.
+ * for raspberrypi.GPIO pin state control and monitoring.
  * </p>  
  * 
  * <p>
- * This example implements the MCP23017 GPIO expansion board.
+ * This example implements the MCP23017 raspberrypi.GPIO expansion board.
  * More information about the board can be found here: *
  * http://ww1.microchip.com/downloads/en/DeviceDoc/21952b.pdf
  * </p>
  * 
  * <p>
  * The MCP23017 is connected via I2C connection to the Raspberry Pi and provides
- * 16 GPIO pins that can be used for either digital input or digital output pins.
+ * 16 raspberrypi.GPIO pins that can be used for either digital input or digital output pins.
  * </p>
  * 
  * @author Robert Savage
@@ -65,12 +66,12 @@ public class MCP23017GpioExample {
     
     public static void main(String args[]) throws InterruptedException, IOException {
         
-        System.out.println("<--Pi4J--> MCP23017 GPIO Example ... started.");
+        homepi.System.out.println("<--Pi4J--> MCP23017 raspberrypi.GPIO Example ... started.");
         
         // create gpio controller
         final GpioController gpio = GpioFactory.getInstance();
         
-        // create custom MCP23017 GPIO provider
+        // create custom MCP23017 raspberrypi.GPIO provider
         final MCP23017GpioProvider gpioProvider = new MCP23017GpioProvider(I2CBus.BUS_1, 0x21);
         
         // provision gpio input pins from MCP23017
@@ -90,7 +91,7 @@ public class MCP23017GpioExample {
             @Override
             public void handleGpioPinDigitalStateChangeEvent(GpioPinDigitalStateChangeEvent event) {
                 // display pin state on console
-                System.out.println(" --> GPIO PIN STATE CHANGE: " + event.getPin() + " = "
+                System.out.println(" --> raspberrypi.GPIO PIN STATE CHANGE: " + event.getPin() + " = "
                         + event.getState());
             }
         }, myInputs);
@@ -115,8 +116,8 @@ public class MCP23017GpioExample {
             Thread.sleep(1000);
         }
         
-        // stop all GPIO activity/threads by shutting down the GPIO controller
-        // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
+        // stop all raspberrypi.GPIO activity/threads by shutting down the raspberrypi.GPIO controller
+        // (this method will forcefully shutdown all raspberrypi.GPIO monitoring threads and scheduled tasks)
         gpio.shutdown();                 
     }
 }

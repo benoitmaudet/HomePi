@@ -37,7 +37,7 @@ import com.pi4j.io.gpio.RaspiPin;
 
 /**
  * This example code demonstrates how to perform simple state
- * control of a GPIO pin on the Raspberry Pi.  
+ * control of a raspberrypi.GPIO pin on the Raspberry Pi.
  * 
  * @author Robert Savage
  */
@@ -45,7 +45,7 @@ public class ShutdownGpioExample {
     
     public static void main(String[] args) throws InterruptedException {
         
-        System.out.println("<--Pi4J--> GPIO Shutdown Example ... started.");
+        System.out.println("<--Pi4J--> raspberrypi.GPIO Shutdown Example ... started.");
         
         // create gpio controller
         final GpioController gpio = GpioFactory.getInstance();
@@ -57,18 +57,18 @@ public class ShutdownGpioExample {
         // automatically applied to the pin when the application is terminated
         pin.setShutdownOptions(true, PinState.LOW, PinPullResistance.OFF);
         
-        System.out.println("--> GPIO state should be: ON");
+        System.out.println("--> raspberrypi.GPIO state should be: ON");
         System.out.println("    This program will automatically terminate in 10 seconds,");
         System.out.println("    or you can use the CTRL-C keystroke to terminate at any time.");
-        System.out.println("    When the program terminates, the GPIO state should be shutdown and set to: OFF");
+        System.out.println("    When the program terminates, the raspberrypi.GPIO state should be shutdown and set to: OFF");
         
         // wait 10 seconds
         Thread.sleep(10000);
         
         System.out.println(" .. shutting down now ...");
         
-        // stop all GPIO activity/threads by shutting down the GPIO controller
-        // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
+        // stop all raspberrypi.GPIO activity/threads by shutting down the raspberrypi.GPIO controller
+        // (this method will forcefully shutdown all raspberrypi.GPIO monitoring threads and scheduled tasks)
         gpio.shutdown();
     }
 }

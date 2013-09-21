@@ -26,6 +26,7 @@
  */
 
 import com.pi4j.wiringpi.Spi;
+import homepi.System;
 
 public class WiringPiSPIExample {
 
@@ -113,7 +114,7 @@ public class WiringPiSPIExample {
         System.out.println("[TX] " + bytesToHex(packet));
         Spi.wiringPiSPIDataRW(0, packet, 3);        
         System.out.println("[RX] " + bytesToHex(packet));
-        System.out.println("-----------------------------------------------");
+        homepi.System.out.println("-----------------------------------------------");
     }
 
     public static void read(byte register){

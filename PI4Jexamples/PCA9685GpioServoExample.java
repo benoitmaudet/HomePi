@@ -37,6 +37,7 @@ import com.pi4j.io.gpio.GpioController;
 import com.pi4j.io.gpio.GpioFactory;
 import com.pi4j.io.gpio.GpioPinPwmOutput;
 import com.pi4j.io.i2c.I2CBus;
+import homepi.System;
 
 /**
  * Simple servo tester application demonstrating Pi4J's Servo component.
@@ -331,7 +332,7 @@ public class PCA9685GpioServoExample {
                 } else if (command.equals("x")) {
                     continue;
                 } else {
-                    System.err.println("Unknown command [" + command + "].");
+                    homepi.System.err.println("Unknown command [" + command + "].");
                     command = null;
                     continue;
                 }

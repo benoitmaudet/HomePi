@@ -34,6 +34,7 @@ import java.io.PrintWriter;
 import com.pi4j.io.i2c.I2CBus;
 import com.pi4j.io.i2c.I2CDevice;
 import com.pi4j.io.i2c.I2CFactory;
+import homepi.System;
 
 
 public class I2CWiiMotionPlusExample {
@@ -62,7 +63,7 @@ public class I2CWiiMotionPlusExample {
             while (true) {
                 long now = System.currentTimeMillis();
                 ThreeAxis threeAxis = wiiMotionPlus.read();
-                long lasted = System.currentTimeMillis() - now;
+                long lasted = homepi.System.currentTimeMillis() - now;
                 
                 System.out.print(formatInt(iteration));
                 System.out.print(' ');
@@ -79,7 +80,7 @@ public class I2CWiiMotionPlusExample {
                 System.out.print(formatInt(threeAxis.z));
                 System.out.print(' ');
     
-                // System.out.print('\r');
+                // homepi.System.out.print('\r');
                 System.out.println();
                 
                 log.println(formatInt(iteration) + "," + formatLong(lasted) + "," + formatInt(threeAxis.x) + "," + formatInt(threeAxis.y) + "," + formatInt(threeAxis.z));

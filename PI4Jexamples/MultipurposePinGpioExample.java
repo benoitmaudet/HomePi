@@ -43,7 +43,7 @@ public class MultipurposePinGpioExample {
     
     public static void main(String args[]) throws InterruptedException {
     
-        System.out.println("<--Pi4J--> GPIO Multipurpose Pin Example ... started.");
+        System.out.println("<--Pi4J--> raspberrypi.GPIO Multipurpose Pin Example ... started.");
         
         // create gpio controller
         final GpioController gpio = GpioFactory.getInstance();
@@ -57,31 +57,31 @@ public class MultipurposePinGpioExample {
             @Override
             public void handleGpioPinDigitalStateChangeEvent(GpioPinDigitalStateChangeEvent event) {
                 // display pin state on console
-                System.out.println(" --> GPIO PIN STATE CHANGE: " + event.getPin() + " = " + event.getState());
+                System.out.println(" --> raspberrypi.GPIO PIN STATE CHANGE: " + event.getPin() + " = " + event.getState());
             }            
         });
         
-        System.out.println(" ... complete the GPIO #02 circuit and see the listener feedback here in the console.");
+        System.out.println(" ... complete the raspberrypi.GPIO #02 circuit and see the listener feedback here in the console.");
         
         // keep program running until user aborts (CTRL-C)
         for (;;) {
             Thread.sleep(5000);
 
-            // here we want to control the multi-purpose GPIO pin
+            // here we want to control the multi-purpose raspberrypi.GPIO pin
             // so we must reconfigure the pin mode first
             pin.setMode(PinMode.DIGITAL_OUTPUT);
             
             // perform the pin output operation
-            System.out.println(" --> GPIO PIN - RECONFIGURED AS OUPUT PIN");
+            System.out.println(" --> raspberrypi.GPIO PIN - RECONFIGURED AS OUPUT PIN");
             pin.pulse(1000, true);
             
             // reconfigure the pin back to an input pin
             pin.setMode(PinMode.DIGITAL_INPUT);
-            System.out.println(" --> GPIO PIN - RECONFIGURED AS INPUT PIN");
+            System.out.println(" --> raspberrypi.GPIO PIN - RECONFIGURED AS INPUT PIN");
         }
         
-        // stop all GPIO activity/threads by shutting down the GPIO controller
-        // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
-        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J GPIO controller        
+        // stop all raspberrypi.GPIO activity/threads by shutting down the raspberrypi.GPIO controller
+        // (this method will forcefully shutdown all raspberrypi.GPIO monitoring threads and scheduled tasks)
+        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J raspberrypi.GPIO controller
     }
 }

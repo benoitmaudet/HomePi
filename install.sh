@@ -1,4 +1,5 @@
 #!/bin/bash
+
 url="http://www.java.net/download/jdk8/archive/b108/binaries/jdk-8-ea-b108-linux-arm-vfp-hflt-18_sep_2013.tar.gz"
 file="jdk-8-ea-b108-linux-arm-vfp-hflt-18_sep_2013.tar.gz"
 

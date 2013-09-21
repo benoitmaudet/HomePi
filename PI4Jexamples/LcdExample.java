@@ -49,7 +49,7 @@ public class LcdExample {
     
     public static void main(String args[]) throws InterruptedException {
         
-        System.out.println("<--Pi4J--> GPIO 4 bit LCD example program");
+        homepi.System.out.println("<--Pi4J--> raspberrypi.GPIO 4 bit LCD example program");
 
         // create gpio controller
         final GpioController gpio = GpioFactory.getInstance();
@@ -157,8 +157,8 @@ public class LcdExample {
             Thread.sleep(1000);
         }
         
-        // stop all GPIO activity/threads by shutting down the GPIO controller
-        // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
-        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J GPIO controller                
+        // stop all raspberrypi.GPIO activity/threads by shutting down the raspberrypi.GPIO controller
+        // (this method will forcefully shutdown all raspberrypi.GPIO monitoring threads and scheduled tasks)
+        // gpio.shutdown();   <--- implement this method call if you wish to terminate the Pi4J raspberrypi.GPIO controller
     }
 }

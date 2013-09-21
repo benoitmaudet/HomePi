@@ -41,10 +41,11 @@ import com.pi4j.io.gpio.GpioController;
 import com.pi4j.io.gpio.GpioFactory;
 import com.pi4j.io.gpio.GpioPinAnalogInput;
 import com.pi4j.io.i2c.I2CBus;
+import homepi.System;
 
 /**
  * <p>
- * This example code demonstrates how to use the ADS1015 Pi4J GPIO interface
+ * This example code demonstrates how to use the ADS1015 Pi4J raspberrypi.GPIO interface
  * for analog input pins.
  * </p>  
  * 
@@ -64,7 +65,7 @@ public class ADS1015DistanceSensorExample {
         // create gpio controller
         final GpioController gpio = GpioFactory.getInstance();
         
-        // create custom ADS1015 GPIO provider
+        // create custom ADS1015 raspberrypi.GPIO provider
         final ADS1015GpioProvider gpioProvider = new ADS1015GpioProvider(I2CBus.BUS_1, ADS1015GpioProvider.ADS1015_ADDRESS_0x48);
         
         // provision gpio analog input pins from ADS1015
@@ -139,10 +140,10 @@ public class ADS1015DistanceSensorExample {
             Thread.sleep(1000);
         }
         
-        // stop all GPIO activity/threads by shutting down the GPIO controller
-        // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
+        // stop all raspberrypi.GPIO activity/threads by shutting down the raspberrypi.GPIO controller
+        // (this method will forcefully shutdown all raspberrypi.GPIO monitoring threads and scheduled tasks)
         gpio.shutdown();
-        System.out.print("");
+        homepi.System.out.print("");
     }
 }
 

@@ -30,14 +30,15 @@ import com.pi4j.wiringpi.GpioInterrupt;
 import com.pi4j.wiringpi.GpioInterruptListener;
 import com.pi4j.wiringpi.GpioInterruptEvent;
 import com.pi4j.wiringpi.GpioUtil;
+import homepi.System;
 
 public class WiringPiGpioInterruptExample {
     
     public static void main(String args[]) throws InterruptedException {
         
-        System.out.println("<--Pi4J--> GPIO INTERRUPT test program");
+        homepi.System.out.println("<--Pi4J--> raspberrypi.GPIO INTERRUPT test program");
         
-        // create and add GPIO listener 
+        // create and add raspberrypi.GPIO listener
         GpioInterrupt.addListener(new GpioInterruptListener() {
             @Override
             public void pinStateChange(GpioInterruptEvent event) {
@@ -54,11 +55,11 @@ public class WiringPiGpioInterruptExample {
         
         // setup wiring pi
         if (Gpio.wiringPiSetup() == -1) {
-            System.out.println(" ==>> GPIO SETUP FAILED");
+            System.out.println(" ==>> raspberrypi.GPIO SETUP FAILED");
             return;
         }
 
-        // export all the GPIO pins that we will be using
+        // export all the raspberrypi.GPIO pins that we will be using
         GpioUtil.export(0, GpioUtil.DIRECTION_IN);
         GpioUtil.export(7, GpioUtil.DIRECTION_IN);
         GpioUtil.export(5, GpioUtil.DIRECTION_OUT);
@@ -68,16 +69,16 @@ public class WiringPiGpioInterruptExample {
         GpioUtil.setEdgeDetection(0, GpioUtil.EDGE_BOTH);
         GpioUtil.setEdgeDetection(7, GpioUtil.EDGE_BOTH);
         
-        // configure GPIO pins 5, 6 as an OUTPUT;
+        // configure raspberrypi.GPIO pins 5, 6 as an OUTPUT;
         Gpio.pinMode(5, Gpio.OUTPUT);
         Gpio.pinMode(6, Gpio.OUTPUT);
 
-        // configure GPIO 0 as an INPUT pin; enable it for callbacks
+        // configure raspberrypi.GPIO 0 as an INPUT pin; enable it for callbacks
         Gpio.pinMode(0, Gpio.INPUT);
         Gpio.pullUpDnControl(0, Gpio.PUD_DOWN);        
         GpioInterrupt.enablePinStateChangeCallback(0);
         
-        // configure GPIO 7 as an INPUT pin; enable it for callbacks
+        // configure raspberrypi.GPIO 7 as an INPUT pin; enable it for callbacks
         Gpio.pinMode(7, Gpio.INPUT);
         Gpio.pullUpDnControl(7, Gpio.PUD_DOWN);        
         GpioInterrupt.enablePinStateChangeCallback(7);
