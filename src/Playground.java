@@ -28,6 +28,7 @@ public class Playground {
         homePi.getNotificationSystem().addNotification(notification);
         notification = new Notification(2,"Nouvelle notification", new Date(),1);
         homePi.getNotificationSystem().addNotification(notification);
+        homePi.getNotificationSystem().removeAllNotification();
 
 
     }

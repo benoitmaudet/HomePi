@@ -14,7 +14,7 @@ import java.util.HashSet;
 
 public class NotificationSystem extends System implements Runnable {
 
-    private static Collection<Notification> notifications = new HashSet<Notification>();;
+    private static Collection<Notification> notifications = new HashSet<Notification>();
     private static Boolean ledIsActive = true;
     private static LedController ledController = new LedController();
 
@@ -28,6 +28,10 @@ public class NotificationSystem extends System implements Runnable {
 
     public void removeNotification(Notification notification){
         notifications.remove(notification);
+    }
+
+    public void removeAllNotification(){
+        notifications = new HashSet<Notification>();;
     }
 
     public int getNumberOfNotification(){

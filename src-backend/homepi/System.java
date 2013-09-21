@@ -26,4 +26,5 @@ public abstract class System implements Activable {
     }
 
     public abstract String toString();
+
 }
