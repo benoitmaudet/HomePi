@@ -15,7 +15,7 @@ import com.pi4j.io.gpio.RaspiPin;
 public class LedController extends Controller{
 
     private String color;
-    private static int interval = 3 ; // 1s
+//    private static int interval = 3 ; // 1s
     private final GpioController gpio = GpioFactory.getInstance();
     private final GpioPinDigitalOutput pin3;
     private final GpioPinDigitalOutput pin4;
@@ -58,28 +58,34 @@ public class LedController extends Controller{
         }
     }
 
-    public void switchOnForInterval() throws Exception {
-        if(isActivate){
-            if(color.equals("red")){
-                pin3.pulse(interval, true);
-            } else if (color.equals("blue")) {
-                pin4.pulse(interval, true);
-            } else if (color.equals("green")) {
-                pin5.pulse(interval, true);
-            }
-            else
-            {
-                throw new Exception("Couleur non comprise en compte");
-            }
-            //TODO : add others colors
-        }
-    }
-
     public void switchOff(){
         pin3.low();
         pin4.low();
         pin5.low();
     }
+
+//    public void switchOnForInterval() throws Exception {
+//        if(isActivate){
+//            if(color.equals("red")){
+//                pin3.pulse(interval, true);
+//            } else if (color.equals("blue")) {
+//                pin4.pulse(interval, true);
+//            } else if (color.equals("green")) {
+//                pin5.pulse(interval, true);
+//            }
+//            else
+//            {
+//                throw new Exception("Couleur non comprise en compte");
+//            }
+//            //TODO : add others colors
+//        }
+//    }
+//
+//    public void switchOff(){
+//        pin3.low();
+//        pin4.low();
+//        pin5.low();
+//    }
 
     @Override
     public String toString() {

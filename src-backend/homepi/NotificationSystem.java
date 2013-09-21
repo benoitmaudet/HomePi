@@ -83,16 +83,13 @@ public class NotificationSystem extends System implements Runnable {
                         break;
                 }
                 try {
-                    ledController.switchOnForInterval();
+                    ledController.switchOn();
+                    Thread.sleep(1000);
+                    ledController.switchOff();
                 } catch (Exception e) {
                     e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                 }
             }
-        }
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
     }
 
