@@ -1,5 +1,10 @@
 package controller;
 
+import com.pi4j.io.gpio.GpioController;
+import com.pi4j.io.gpio.GpioFactory;
+import com.pi4j.io.gpio.GpioPinDigitalOutput;
+import com.pi4j.io.gpio.RaspiPin;
+
 /**
  * HomePi
  * Author: Benoît Maudet
@@ -9,8 +14,13 @@ package controller;
 
 public class InfraRedController extends Controller {
 
-    public InfraRedController() {
+    private final GpioController gpio = GpioFactory.getInstance();
+    private final GpioPinDigitalOutput pin0;
+    private final GpioPinDigitalOutput pin1;
 
+    public InfraRedController() {
+        pin0 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_00, "Out_IR");
+        pin1 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01, "In_IR");
     }
 
     public void sendMessage(){
