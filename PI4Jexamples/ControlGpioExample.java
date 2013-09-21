@@ -49,31 +49,31 @@ public class ControlGpioExample {
         // create gpio controller
         final GpioController gpio = GpioFactory.getInstance();
         
-        // provision gpio pin #01 as an output pin and turn on
-        final GpioPinDigitalOutput pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01, "MyLED", PinState.HIGH);
+        // provision gpio pin #04 as an output pin and turn on
+        final GpioPinDigitalOutput pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_04, "MyLED", PinState.HIGH);
         System.out.println("--> raspberrypi.GPIO state should be: ON");
         
         Thread.sleep(5000);
         
-        // turn off gpio pin #01
+        // turn off gpio pin #04
         pin.low();
         System.out.println("--> raspberrypi.GPIO state should be: OFF");
 
         Thread.sleep(5000);
 
-        // toggle the current state of gpio pin #01 (should turn on)
+        // toggle the current state of gpio pin #04 (should turn on)
         pin.toggle();
         System.out.println("--> raspberrypi.GPIO state should be: ON");
 
         Thread.sleep(5000);
 
-        // toggle the current state of gpio pin #01  (should turn off)
+        // toggle the current state of gpio pin #04  (should turn off)
         pin.toggle();
         System.out.println("--> raspberrypi.GPIO state should be: OFF");
         
         Thread.sleep(5000);
 
-        // turn on gpio pin #01 for 1 second and then off
+        // turn on gpio pin #04 for 1 second and then off
         System.out.println("--> raspberrypi.GPIO state should be: ON for only 1 second");
         pin.pulse(1000, true); // set second argument to 'true' use a blocking call
         

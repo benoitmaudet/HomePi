@@ -35,25 +35,25 @@ public class Playground {
         final GpioPinDigitalOutput pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_04, "MyLED", PinState.HIGH);
         System.out.println("--> raspberrypi.GPIO state should be: ON");
 
-        Thread.sleep(5000);
+        Thread.sleep(15000);
 
         // turn off gpio pin #04
         pin.low();
         System.out.println("--> raspberrypi.GPIO state should be: OFF");
 
-        Thread.sleep(5000);
+        Thread.sleep(15000);
 
         // toggle the current state of gpio pin #04 (should turn on)
         pin.toggle();
         System.out.println("--> raspberrypi.GPIO state should be: ON");
 
-        Thread.sleep(5000);
+        Thread.sleep(15000);
 
         // toggle the current state of gpio pin #04  (should turn off)
         pin.toggle();
         System.out.println("--> raspberrypi.GPIO state should be: OFF");
 
-        Thread.sleep(5000);
+        Thread.sleep(15000);
 
         // turn on gpio pin #04 for 1 second and then off
         System.out.println("--> raspberrypi.GPIO state should be: ON for only 1 second");

@@ -11,3 +11,6 @@ update-alternatives --install "/usr/bin/java" "java" "/opt/jdk1.8.0/bin/java" 1
 update-alternatives --config javac
 
 rm $file
+mkdir bin
+
+
