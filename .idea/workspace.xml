@@ -2,12 +2,244 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74d8740d-5184-4157-9e54-6a45e4e63811" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-core-javadoc.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-core-sources.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-core.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-device-javadoc.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-device-sources.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-device.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-example-javadoc.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-example-sources.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-example.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-gpio-extension-javadoc.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-gpio-extension-sources.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-gpio-extension.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-service-javadoc.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-service-sources.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-service.jar" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\Component.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\ComponentBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\ComponentListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\ObserveableComponent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\ObserveableComponentBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\access\Keypad.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\lcd\LCD.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\lcd\LCDBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\lcd\LCDTextAlignment.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\lcd\impl\GpioLcdDisplay.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\light\DimmableLight.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\light\DimmableLightBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\light\DimmableLightListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\light\LED.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\light\LEDBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\light\Light.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\light\LightBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\light\LightLevelChangeEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\light\LightListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\light\LightStateChangeEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\light\impl\GpioDimmableLightComponent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\light\impl\GpioLEDComponent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\light\impl\GpioLightComponent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\motor\Motor.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\motor\MotorBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\motor\MotorState.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\motor\StepperMotor.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\motor\StepperMotorBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\motor\impl\GpioStepperMotorComponent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\power\Power.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\power\PowerBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\power\PowerListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\power\PowerState.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\power\PowerStateChangeEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\power\impl\GpioPowerComponent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\relay\Relay.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\relay\RelayBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\relay\RelayListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\relay\RelayState.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\relay\RelayStateChangeEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\relay\impl\GpioRelayComponent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\sensor\MotionSensor.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\sensor\MotionSensorBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\sensor\MotionSensorChangeEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\sensor\MotionSensorListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\sensor\Sensor.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\sensor\SensorBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\sensor\SensorListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\sensor\SensorState.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\sensor\SensorStateChangeEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\sensor\impl\GpioMotionSensorComponent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\sensor\impl\GpioSensorComponent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\switches\MomentarySwitch.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\switches\MomentarySwitchBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\switches\Switch.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\switches\SwitchBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\switches\SwitchListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\switches\SwitchState.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\switches\SwitchStateChangeEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\switches\ToggleSwitch.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\switches\ToggleSwitchBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\switches\impl\GpioMomentarySwitchComponent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\switches\impl\GpioSwitchComponent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\switches\impl\GpioToggleSwitchComponent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\temperature\TemperatureChangeEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\temperature\TemperatureController.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\temperature\TemperatureControllerBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\temperature\TemperatureListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\temperature\TemperatureSensor.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\component\temperature\TemperatureSensorBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\concurrent\DefaultExecutorServiceFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\concurrent\ExecutorServiceFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\concurrent\ScheduledExecutorServiceWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\Device.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\DeviceBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\DeviceListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\ObserveableDevice.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\ObserveableDeviceBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\access\Opener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\access\OpenerBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\access\OpenerControlState.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\access\OpenerListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\access\OpenerLockChangeEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\access\OpenerLockedException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\access\OpenerState.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\access\OpenerStateChangeEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\access\impl\OpenerDevice.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\garage\GarageDoorOpener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\garage\GarageDoorOpenerBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\garage\impl\GarageDoorOpenerDevice.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\gate\GateOpener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\gate\GateOpenerBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\gate\impl\GateOpenerDevice.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\piface\PiFace.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\piface\PiFaceBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\piface\PiFaceLed.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\piface\PiFaceRelay.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\piface\PiFaceSwitch.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\piface\impl\PiFaceDevice.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\sprinkler\SprinklerController.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\sprinkler\SprinklerControllerBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\sprinkler\SprinklerZone.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\device\sprinkler\SprinklerZoneBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\gpio\extension\mcp\MCP23008GpioProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\gpio\extension\mcp\MCP23008Pin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\gpio\extension\mcp\MCP23017GpioProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\gpio\extension\mcp\MCP23017Pin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\gpio\extension\mcp\MCP23S17GpioProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\gpio\extension\mcp\MCP23S17Pin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\gpio\extension\olimex\OlimexAVRIOGpioProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\gpio\extension\olimex\OlimexAVRIOPin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\gpio\extension\pcf\PCF8574GpioProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\gpio\extension\pcf\PCF8574Pin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\gpio\extension\piface\PiFaceGpioProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\gpio\extension\piface\PiFacePin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\gpio\extension\serial\SerialCommandQueueProcessingThread.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioController.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioPin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioPinAnalog.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioPinAnalogInput.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioPinAnalogOutput.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioPinDigital.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioPinDigitalInput.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioPinDigitalMultipurpose.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioPinDigitalOutput.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioPinInput.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioPinOutput.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioPinPwm.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioPinPwmOutput.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioPinShutdown.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioProviderBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\GpioProviderPinCache.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\PiFacePin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\Pin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\PinDirection.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\PinEdge.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\PinMode.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\PinPullResistance.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\PinState.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\RaspiGpioProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\RaspiPin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\event\GpioPinAnalogValueChangeEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\event\GpioPinDigitalStateChangeEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\event\GpioPinEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\event\GpioPinListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\event\GpioPinListenerAnalog.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\event\GpioPinListenerDigital.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\event\PinAnalogValueChangeEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\event\PinDigitalStateChangeEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\event\PinEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\event\PinEventType.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\event\PinListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\exception\GpioPinExistsException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\exception\GpioPinNotProvisionedException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\exception\InvalidPinException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\exception\InvalidPinModeException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\exception\PinProviderException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\exception\UnsupportedPinModeException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\exception\UnsupportedPinPullResistanceException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\impl\GpioControllerImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\impl\GpioEventMonitorExecutorImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\impl\GpioEventMonitorImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\impl\GpioPinImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\impl\GpioPinShutdownImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\impl\GpioScheduledExecutorImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\impl\PinImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\tasks\impl\GpioBlinkStopTaskImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\tasks\impl\GpioBlinkTaskImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\tasks\impl\GpioEventDispatchTaskImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\tasks\impl\GpioPulseTaskImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\trigger\GpioBlinkStateTrigger.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\trigger\GpioBlinkStopStateTrigger.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\trigger\GpioCallbackTrigger.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\trigger\GpioInverseSyncStateTrigger.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\trigger\GpioPulseStateTrigger.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\trigger\GpioSetStateTrigger.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\trigger\GpioSyncStateTrigger.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\trigger\GpioToggleStateTrigger.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\trigger\GpioTrigger.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\gpio\trigger\GpioTriggerBase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\i2c\I2CBus.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\i2c\I2CDevice.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\i2c\I2CFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\i2c\impl\I2CBusImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\i2c\impl\I2CDeviceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\serial\Serial.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\serial\SerialDataEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\serial\SerialDataListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\serial\SerialFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\serial\SerialPortException.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\serial\impl\SerialDataMonitorThread.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\io\serial\impl\SerialImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\jni\I2C.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\jni\Serial.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\system\NetworkInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\system\NetworkInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\system\SystemInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\temperature\TemperatureConversion.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\temperature\TemperatureScale.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\util\ExecUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\util\NativeLibraryLoader.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\util\StringUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\wiringpi\Gertboard.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\wiringpi\Gpio.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\wiringpi\GpioInterrupt.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\wiringpi\GpioInterruptEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\wiringpi\GpioInterruptListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\wiringpi\GpioUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\wiringpi\Lcd.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\wiringpi\Nes.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\wiringpi\Serial.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\wiringpi\Shift.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\wiringpi\SoftPwm.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j\wiringpi\Spi.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applicationUpdate.sh" afterPath="$PROJECT_DIR$/applicationUpdate.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HomePi.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379768337830" ignored="false" />
+    <file path="/Dummy.txt" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379768849784" ignored="false" />
     <file path="/WiringPiLcdExample.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379159342077" ignored="false" />
     <file path="/ControlGpioExample.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379159551983" ignored="false" />
     <file path="/RaspberryPi.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379162875236" ignored="false" />
@@ -504,7 +736,7 @@
     <file path="/Command.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379166345730" ignored="false" />
     <file path="/Playground.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379767818301" ignored="false" />
     <file path="/HomePi.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379168034196" ignored="false" />
-    <file path="/applicationUpdate.sh" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379768323967" ignored="false" />
+    <file path="/applicationUpdate.sh" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379768807850" ignored="false" />
     <file path="/install.sh" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379765825011" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -569,22 +801,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Playground.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Playground.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Playground.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="22" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="16" column="21" selection-start="238" selection-end="238" vertical-scroll-proportion="0.2819237">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationUpdate.sh" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="applicationUpdate.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/applicationUpdate.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="28" selection-start="80" selection-end="80" vertical-scroll-proportion="0.05592105">
+            <state line="3" column="89" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlaygroundTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/PlaygroundTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -593,42 +834,6 @@
         <entry file="file://$PROJECT_DIR$/install.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="1" selection-start="67" selection-end="98" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LedController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src-backend/controller/LedController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="6" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LED.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/pi4j/component/light/LED.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="17" selection-start="1094" selection-end="1094" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LEDBase.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/pi4j/component/light/LEDBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="56" selection-start="1185" selection-end="1198" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GpioLEDComponent.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/pi4j/component/light/impl/GpioLEDComponent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="48" selection-start="1795" selection-end="1815" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -757,7 +962,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomePi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomePi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src-backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="raspberrypi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -861,11 +1084,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pi4j" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wiringpi" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -879,103 +1098,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pi4j" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pi4j" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pi4j" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="light" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pi4j" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="light" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PI4Jexamples" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -986,38 +1109,45 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="recentsLimit" value="5" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/pi4j-core.jar!/" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="homepi" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="options.lastSelected" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="controlabledevice" />
       <recent name="" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Benoît\IdeaProjects\HomePi\lib" />
       <recent name="C:\Users\Benoît\IdeaProjects\HomePi\src\com\pi4j" />
       <recent name="C:\Users\Benoît\IdeaProjects\HomePi" />
       <recent name="C:\Users\Benoît\IdeaProjects\HomePi\src" />
-      <recent name="C:\Users\Benoît\IdeaProjects\HomePi\lib" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Playground">
@@ -1258,7 +1388,19 @@
       <created>1379768343210</created>
       <updated>1379768343210</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Test">
+      <created>1379768394665</created>
+      <updated>1379768394665</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Test">
+      <created>1379768546013</created>
+      <updated>1379768546013</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Test">
+      <created>1379768851954</created>
+      <updated>1379768851954</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1269,6 +1411,7 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32942432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1279,11 +1422,10 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19850586" sideWeight="0.6713666" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284055" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19850586" sideWeight="0.6705757" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1354,34 +1496,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src-backend/homepi/NotificationSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src-backend/homepi/HomePi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="40" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src-backend/homepi/Notification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="11" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="43" selection-start="8487" selection-end="8517" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/RPI/raspberry.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="20" selection-start="243" selection-end="1029" vertical-scroll-proportion="0.0">
@@ -1399,27 +1513,6 @@
     <entry file="file://$PROJECT_DIR$/src-backend/controller/LedController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="6" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pi4j/component/light/LED.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="17" selection-start="1094" selection-end="1094" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pi4j/component/light/LEDBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="56" selection-start="1185" selection-end="1198" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pi4j/component/light/impl/GpioLEDComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="48" selection-start="1795" selection-end="1815" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1447,15 +1540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="22" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/install.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="1" selection-start="67" selection-end="98" vertical-scroll-proportion="0.0">
@@ -1463,9 +1547,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/homepi.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.4162436">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/PlaygroundTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/applicationUpdate.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="28" selection-start="80" selection-end="80" vertical-scroll-proportion="0.05592105">
+        <state line="3" column="89" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="21" selection-start="238" selection-end="238" vertical-scroll-proportion="0.2819237">
           <folding />
         </state>
       </provider>

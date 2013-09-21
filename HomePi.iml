@@ -19,6 +19,7 @@
       </library>
     </orderEntry>
     <orderEntry type="library" exported="" name="junit-4.11" level="project" />
+    <orderEntry type="library" name="pi4j-gpio-extension-sources" level="project" />
   </component>
 </module>
 
