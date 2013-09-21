@@ -14,15 +14,12 @@ import java.util.HashSet;
 
 public class NotificationSystem extends System implements Runnable {
 
-    private static Collection<Notification> notifications;
-    private Boolean ledIsActive;
-    private LedController ledController;
+    private static Collection<Notification> notifications = new HashSet<Notification>();;
+    private static Boolean ledIsActive = true;
+    private static LedController ledController = new LedController();
 
 
     public NotificationSystem() {
-       notifications = new HashSet<Notification>();
-       ledIsActive = true;
-       ledController = new LedController();
     }
 
     public void addNotification(Notification notification){
