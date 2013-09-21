@@ -15,7 +15,7 @@ import com.pi4j.io.gpio.RaspiPin;
 public class LedController extends Controller{
 
     private String color;
-    private static int interval = 1000; // 1s
+    private static int interval = 3 ; // 1s
     private final GpioController gpio = GpioFactory.getInstance();
     private final GpioPinDigitalOutput pin3;
     private final GpioPinDigitalOutput pin4;
@@ -35,11 +35,11 @@ public class LedController extends Controller{
         this.color = color;
     }
 
-    public void flash(){
-        pin3.pulse(1000, true); // set second argument to 'true' use a blocking call
-        pin4.pulse(1000, true); // set second argument to 'true' use a blocking call
-        pin5.pulse(1000, true); // set second argument to 'true' use a blocking call
-    }
+//    public void flash(){
+//        pin3.pulse(1000, true); // set second argument to 'true' use a blocking call
+//        pin4.pulse(1000, true); // set second argument to 'true' use a blocking call
+//        pin5.pulse(1000, true); // set second argument to 'true' use a blocking call
+//    }
 
     public void switchOn() throws Exception {
         if(isActivate){
