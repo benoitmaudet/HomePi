@@ -1,10 +1,4 @@
 import com.pi4j.io.gpio.*;
-import homepi.*;
-
-
-import java.lang.System;
-import java.util.Date;
-import java.lang.*;
 
 /**
  * HomePi
@@ -22,9 +16,9 @@ public class Playground {
     public static void main(String[] args) throws InterruptedException{
 
         System.out.println("Hello world !");
-        HomePi homePi = new HomePi();
-        Notification notification = new Notification(1,"Nouvelle notification", new Date(),1);
-        homePi.getNotificationSystem().addNotification(notification);
+//        HomePi homePi = new HomePi();
+//        Notification notification = new Notification(1,"Nouvelle notification", new Date(),1);
+//        homePi.getNotificationSystem().addNotification(notification);
 
         System.out.println("<--Pi4J--> raspberrypi.GPIO Control Example ... started.");
 
