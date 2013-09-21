@@ -7,7 +7,7 @@
     </list>
     <ignored path="HomePi.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379767874409" ignored="false" />
+    <file path="/Dummy.txt" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379768337830" ignored="false" />
     <file path="/WiringPiLcdExample.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379159342077" ignored="false" />
     <file path="/ControlGpioExample.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379159551983" ignored="false" />
     <file path="/RaspberryPi.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379162875236" ignored="false" />
@@ -517,7 +517,7 @@
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="C:\Users\Benoît\IdeaProjects\HomePi" />
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
@@ -583,7 +583,7 @@
       <file leaf-file-name="applicationUpdate.sh" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/applicationUpdate.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="39" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0372807">
+            <state line="3" column="28" selection-start="80" selection-end="80" vertical-scroll-proportion="0.05592105">
               <folding />
             </state>
           </provider>
@@ -592,7 +592,7 @@
       <file leaf-file-name="install.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/install.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
+            <state line="3" column="1" selection-start="67" selection-end="98" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -1254,7 +1254,11 @@
       <created>1379767933065</created>
       <updated>1379767933065</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Test">
+      <created>1379768343210</created>
+      <updated>1379768343210</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1454,14 +1458,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/install.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
+        <state line="3" column="1" selection-start="67" selection-end="98" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/applicationUpdate.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="39" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0372807">
+        <state line="3" column="28" selection-start="80" selection-end="80" vertical-scroll-proportion="0.05592105">
           <folding />
         </state>
       </provider>
