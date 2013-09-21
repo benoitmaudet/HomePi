@@ -11,7 +11,7 @@ import general.Activable;
 
 public abstract class System implements Activable {
 
-    protected Boolean isActivate;
+    protected static Boolean isActivate = true;
 
     public System() {
         //TODO : write homepi.System constructor
