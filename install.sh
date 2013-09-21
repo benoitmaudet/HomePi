@@ -11,6 +11,11 @@ update-alternatives --install "/usr/bin/java" "java" "/opt/jdk1.8.0/bin/java" 1
 update-alternatives --config javac
 
 rm $file
-mkdir bin
+
+mkdir /var/www
+git clone https://github.com/benoitmaudet/HomePi /var/www/HomePi
+mkdir /var/www/HomePi/bin
+chmod +x /var/www/HomePi/applicationUpdate.sh
+
 
 
