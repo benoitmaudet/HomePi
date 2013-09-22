@@ -3,6 +3,7 @@ package homepi;
 import controller.LedController;
 
 import java.util.Collection;
+import java.util.Date;
 import java.util.HashSet;
 
 /**
@@ -89,8 +90,20 @@ public class NotificationSystem extends System implements Runnable {
         }
     }
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws InterruptedException {
+        HomePi homePi = new HomePi();
+        Notification notification = new Notification(0,"Nouvelle notification", new Date(),1);
+        homePi.getNotificationSystem().addNotification(notification);
+        new Thread(homePi.getNotificationSystem()).start();
+        Thread.sleep(5000);
+        homePi.getNotificationSystem().removeNotification(notification);
+        notification = new Notification(1,"Nouvelle notification", new Date(),1);
+        homePi.getNotificationSystem().addNotification(notification);
+        Thread.sleep(5000);
+        notification = new Notification(2,"Nouvelle notification", new Date(),1);
+        homePi.getNotificationSystem().addNotification(notification);
+        Thread.sleep(5000);
+        homePi.getNotificationSystem().removeAllNotification();
     }
 
 

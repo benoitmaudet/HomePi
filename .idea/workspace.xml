@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74d8740d-5184-4157-9e54-6a45e4e63811" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="C:\Users\Benoît\IdeaProjects\HomePi\src-backend\controller\LedController.java" afterPath="$PROJECT_DIR$/src-backend/controller/LedController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-backend/raspberrypi/RCSwitch.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src-backend/homepi/NotificationSystem.java" afterPath="$PROJECT_DIR$/src-backend/homepi/NotificationSystem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Playground.java" afterPath="$PROJECT_DIR$/src/Playground.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HomePi.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379789220398" ignored="false" />
+    <file path="/Dummy.txt" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379849888161" ignored="false" />
     <file path="/WiringPiLcdExample.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379159342077" ignored="false" />
     <file path="/ControlGpioExample.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379159551983" ignored="false" />
     <file path="/RaspberryPi.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379162875236" ignored="false" />
@@ -488,10 +489,10 @@
     <file path="$USER_HOME$/AppData/Local/Temp/Rar$DRa0.326/pi4j-master/pi4j-core/src/test/java/com/pi4j/io/gpio/test/GpioPinDigitalInputTests.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379162342699" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/Rar$DRa0.326/pi4j-master/pi4j-core/src/test/java/com/pi4j/io/gpio/test/GpioPinAnalogInputTests.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379162342699" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/Rar$DRa0.326/pi4j-master/pi4j-core/src/test/java/com/pi4j/io/gpio/test/MockGpioFactory.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379162342699" ignored="false" />
-    <file path="/RadioController.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379163807484" ignored="false" />
+    <file path="/RadioController.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379850107472" ignored="false" />
     <file path="/Notification.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379164009748" ignored="false" />
-    <file path="/NotificationSystem.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379789078457" ignored="false" />
-    <file path="/LedController.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379789145234" ignored="false" />
+    <file path="/NotificationSystem.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379843541146" ignored="false" />
+    <file path="/LedController.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379843479427" ignored="false" />
     <file path="/Activable.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379164911249" ignored="false" />
     <file path="/Controller.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379165684791" ignored="false" />
     <file path="/InfraRedController.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379165165641" ignored="false" />
@@ -503,10 +504,11 @@
     <file path="/InfraredDevice.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379166208162" ignored="false" />
     <file path="/RadioDevice.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379166229520" ignored="false" />
     <file path="/Command.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379166345730" ignored="false" />
-    <file path="/Playground.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379788422044" ignored="false" />
+    <file path="/Playground.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379850115712" ignored="false" />
     <file path="/HomePi.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379168034196" ignored="false" />
     <file path="/applicationUpdate.sh" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379773025868" ignored="false" />
     <file path="/install.sh" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379772908961" ignored="false" />
+    <file path="/RCSwitch.java" changelist="74d8740d-5184-4157-9e54-6a45e4e63811" time="1379845887725" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -524,6 +526,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -560,7 +563,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -570,10 +572,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Playground.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Playground.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Playground.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="53" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
+            <state line="23" column="44" selection-start="465" selection-end="465" vertical-scroll-proportion="0.64842457">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RadioController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src-backend/controller/RadioController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="26" selection-start="253" selection-end="268" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GpioUtil.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/pi4j-core.jar!/com/pi4j/wiringpi/GpioUtil.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SwitchBase.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/pi4j-device.jar!/com/pi4j/component/switches/SwitchBase.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="22" selection-start="179" selection-end="179" vertical-scroll-proportion="-3.4">
               <folding />
             </state>
           </provider>
@@ -588,21 +621,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LedController.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LedController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src-backend/controller/LedController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="49" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.15098469">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InfraRedController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src-backend/controller/InfraRedController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="64" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
+            <state line="17" column="4" selection-start="341" selection-end="410" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -611,7 +633,7 @@
       <file leaf-file-name="Notification.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src-backend/homepi/Notification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+            <state line="58" column="4" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -620,25 +642,7 @@
       <file leaf-file-name="NotificationSystem.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src-backend/homepi/NotificationSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="46" selection-start="1118" selection-end="1315" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="System.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src-backend/homepi/System.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GPIO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src-backend/raspberrypi/GPIO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="7" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0">
+            <state line="97" column="14" selection-start="2770" selection-end="2770" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -677,8 +681,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src-backend/controlabledevice/ControlableDevice.java" />
-        <option value="$PROJECT_DIR$/src-backend/controlabledevice/RadioLightSocket.java" />
         <option value="$PROJECT_DIR$/src-backend/controlabledevice/RadioDevice.java" />
         <option value="$PROJECT_DIR$/src-backend/controlabledevice/InfraredDevice.java" />
         <option value="$PROJECT_DIR$/src-backend/controller/Controller.java" />
@@ -690,9 +692,11 @@
         <option value="$PROJECT_DIR$/src-backend/raspberrypi/GPIO.java" />
         <option value="$PROJECT_DIR$/src-backend/controller/InfraRedController.java" />
         <option value="$PROJECT_DIR$/src-backend/homepi/System.java" />
-        <option value="$PROJECT_DIR$/src/Playground.java" />
-        <option value="$PROJECT_DIR$/src-backend/homepi/NotificationSystem.java" />
         <option value="$PROJECT_DIR$/src-backend/controller/LedController.java" />
+        <option value="$PROJECT_DIR$/src-backend/homepi/NotificationSystem.java" />
+        <option value="$PROJECT_DIR$/src-backend/raspberrypi/RCSwitch.java" />
+        <option value="$PROJECT_DIR$/src-backend/controller/RadioController.java" />
+        <option value="$PROJECT_DIR$/src/Playground.java" />
       </list>
     </option>
   </component>
@@ -744,102 +748,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src-backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raspberrypi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src-backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homepi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src-backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src-backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomePi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1188,7 +1096,31 @@
       <created>1379788849909</created>
       <updated>1379788849909</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Test">
+      <created>1379789264834</created>
+      <updated>1379789264834</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Test">
+      <created>1379842884573</created>
+      <updated>1379842884573</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Test">
+      <created>1379843305876</created>
+      <updated>1379843305876</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Test">
+      <created>1379843594733</created>
+      <updated>1379843594734</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Test">
+      <created>1379843627370</created>
+      <updated>1379843627370</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Test">
+      <created>1379849892124</created>
+      <updated>1379849892124</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1203,17 +1135,17 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32942432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286334" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19850586" sideWeight="0.6705757" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19850586" sideWeight="0.6705757" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286334" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1284,26 +1216,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/lib/pi4j-core.jar!/com/pi4j/io/gpio/GpioController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="163" selection-end="163" vertical-scroll-proportion="-1.361556" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/PlaygroundTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/install.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="57" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/pi4j-core.jar!/com/pi4j/io/gpio/Pin.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="146" selection-end="169" vertical-scroll-proportion="0.09582864" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src-backend/raspberrypi/RaspberryPi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="13" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
@@ -1318,30 +1230,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src-backend/homepi/Notification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src-backend/homepi/HomePi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src-backend/controller/InfraRedController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="64" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applicationUpdate.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="81" selection-start="185" selection-end="250" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1358,28 +1249,81 @@
         <state line="674" column="29" selection-start="25309" selection-end="25309" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="53" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/pi4j-core.jar!/com/pi4j/io/gpio/GpioPinDigitalOutput.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="35" selection-start="693" selection-end="693" vertical-scroll-proportion="0.421646" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/applicationUpdate.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="81" selection-start="185" selection-end="250" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src-backend/homepi/HomePi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src-backend/homepi/Notification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="4" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src-backend/homepi/NotificationSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="46" selection-start="1118" selection-end="1315" vertical-scroll-proportion="0.0">
+        <state line="97" column="14" selection-start="2770" selection-end="2770" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src-backend/controller/LedController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="49" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.15098469">
+        <state line="17" column="4" selection-start="341" selection-end="410" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/pi4j-core.jar!/com/pi4j/wiringpi/GpioUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src-backend/raspberrypi/RCSwitch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="217" column="19" selection-start="7153" selection-end="7153" vertical-scroll-proportion="0.33258173">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/pi4j-device.jar!/com/pi4j/component/switches/SwitchBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="179" selection-end="179" vertical-scroll-proportion="-3.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src-backend/controller/RadioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="26" selection-start="253" selection-end="268" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="44" selection-start="465" selection-end="465" vertical-scroll-proportion="0.64842457">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,7 +1,6 @@
-import homepi.HomePi;
-import homepi.Notification;
+import controller.RadioController;
 
-import java.util.Date;
+import java.io.IOException;
 
 /**
  * HomePi
@@ -19,18 +18,10 @@ public class Playground {
     public static void main(String[] args) throws InterruptedException{
 
         System.out.println("Hello world !");
-        HomePi homePi = new HomePi();
-        Notification notification = new Notification(0,"Nouvelle notification", new Date(),1);
-        homePi.getNotificationSystem().addNotification(notification);
-        new Thread(homePi.getNotificationSystem()).start();
-        Thread.sleep(5000);
-        homePi.getNotificationSystem().removeNotification(notification);
-        notification = new Notification(1,"Nouvelle notification", new Date(),1);
-        homePi.getNotificationSystem().addNotification(notification);
-        Thread.sleep(5000);
-        notification = new Notification(2,"Nouvelle notification", new Date(),1);
-        homePi.getNotificationSystem().addNotification(notification);
-        Thread.sleep(5000);
-        homePi.getNotificationSystem().removeAllNotification();
+        try {
+            RadioController.sendMessage("5510485");
+        } catch (IOException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
     }
 }
