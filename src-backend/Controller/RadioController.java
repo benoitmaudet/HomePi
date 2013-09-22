@@ -24,9 +24,10 @@ public class RadioController extends Controller{
 
     public static void sendMessage(String message) throws IOException, InterruptedException {
         System.out.println("In");
-        Process p = Runtime.getRuntime().exec("chmod +x /var/www/HomePi/rf_utils/codesend; /var/www/HomePi/rf_utils/codesend " + message);
+        Process p = Runtime.getRuntime().exec("chmod +x /var/www/HomePi/rf_utils/codesend");
         p.waitFor();
-
+        p = Runtime.getRuntime().exec("/var/www/HomePi/rf_utils/codesend " + message);
+        p.waitFor();
         BufferedReader reader =
                 new BufferedReader(new InputStreamReader(
                         p.getInputStream()));
