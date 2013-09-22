@@ -14,37 +14,34 @@ import com.pi4j.io.gpio.RaspiPin;
 
 public class LedController extends Controller{
 
-    private String color;
-//    private static int interval = 3 ; // 1s
-    private final GpioController gpio = GpioFactory.getInstance();
-    private final GpioPinDigitalOutput pin3;
-    private final GpioPinDigitalOutput pin4;
-    private final GpioPinDigitalOutput pin5;
+    private static String color;
+    private static final GpioController gpio = GpioFactory.getInstance();
+    private static final GpioPinDigitalOutput pin3 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_03, "Red_LED");;
+    private static final GpioPinDigitalOutput pin4 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_04, "Blue_LED");;
+    private static final GpioPinDigitalOutput pin5 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_05, "Green_LED");;
 
     public LedController() {
-        pin3 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_03, "Red_LED");
-        pin4 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_04, "Blue_LED");
-        pin5 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_05, "Green_LED");
+
     }
 
-    public String getColor() {
+    public static String getColor() {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public static void setColor(String color) {
+        LedController.color = color;
     }
 
-//    public void flash(){
-//        pin3.pulse(1000, true); // set second argument to 'true' use a blocking call
-//        pin4.pulse(1000, true); // set second argument to 'true' use a blocking call
-//        pin5.pulse(1000, true); // set second argument to 'true' use a blocking call
-//    }
+    public static void flash(){
+        pin3.pulse(1000, true); // set second argument to 'true' use a blocking call
+        pin4.pulse(1000, true); // set second argument to 'true' use a blocking call
+        pin5.pulse(1000, true); // set second argument to 'true' use a blocking call
+    }
 
-    public void switchOn() throws Exception {
-        if(isActivate){
+    public static void switchOn() throws Exception {
+//        if(isActivate){
             if(color.equals("red")){
-                    pin3.high();
+                pin3.high();
             } else if (color.equals("blue")) {
                 pin4.high();
             } else if (color.equals("green")) {
@@ -55,10 +52,10 @@ public class LedController extends Controller{
                 throw new Exception("Couleur non comprise en compte");
             }
             //TODO : add others colors
-        }
+//        }
     }
 
-    public void switchOff(){
+    public static void switchOff(){
         pin3.low();
         pin4.low();
         pin5.low();
