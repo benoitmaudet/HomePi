@@ -3,8 +3,7 @@ package controller;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Collection;
-import java.util.HashSet;
+import java.util.HashMap;
 
 /**
  * HomePi
@@ -31,8 +30,8 @@ public class RadioController extends Controller{
         p.waitFor();
     }
 
-    public static Collection<String> captureMessage() throws IOException, InterruptedException {
-        HashSet<String> result = new HashSet<String>();
+    public static HashMap<String, Integer> captureMessage() throws IOException, InterruptedException {
+        HashMap<String,Integer> result = new HashMap<String,Integer>();
         Process p = Runtime.getRuntime().exec("chmod +x /var/www/HomePi/rf_utils/RFSniffer");
         p.waitFor();
         p = Runtime.getRuntime().exec("/var/www/HomePi/rf_utils/RFSniffer");
@@ -41,7 +40,13 @@ public class RadioController extends Controller{
         String line = "";
         while ( (line = buf.readLine() ) != null )
         {
-            result.add(line);
+            if(result.containsKey(line)){
+                result.put(line,result.get(line)+1);
+            }
+            else
+            {
+                result.put(line, 1);
+            }
         }
         return result;
     }
