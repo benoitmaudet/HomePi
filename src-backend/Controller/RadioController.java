@@ -23,7 +23,8 @@ public class RadioController extends Controller{
     }
 
     public static void sendMessage(String message) throws IOException, InterruptedException {
-        Process p = Runtime.getRuntime().exec("sudo rf_utils/send " + message);
+        System.out.println("In");
+        Process p = Runtime.getRuntime().exec("sudo ls rf_utils");
         p.waitFor();
 
         BufferedReader reader =
