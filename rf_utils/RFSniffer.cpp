@@ -29,22 +29,25 @@ int main(int argc, char *argv[]) {
      mySwitch.enableReceive(PIN);  // Receiver on inerrupt 0 => that is pin #2
      
     
+      Stopwatch s = new Stopwatch();
+        s.Start();
+        while (s.Elapsed < TimeSpan.FromSeconds(10))
+        {
+            if (mySwitch.available()) {
 
-  
-      if (mySwitch.available()) {
-    
-        int value = mySwitch.getReceivedValue();
-    
-        if (value == 0) {
-          printf("Unknown encoding");
-        } else {    
-   
-          printf("Received %i\n", mySwitch.getReceivedValue() );
+                    int value = mySwitch.getReceivedValue();
+
+                    if (value == 0) {
+                      printf("Unknown encoding");
+                    } else {
+
+                      printf("Received %i\n", mySwitch.getReceivedValue() );
+                    }
+
+                    mySwitch.resetAvailable();
+                   }
         }
-    
-        mySwitch.resetAvailable();
-       }
-
+        s.Stop();
   exit(0);
 
 
