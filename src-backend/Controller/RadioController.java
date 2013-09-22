@@ -31,8 +31,10 @@ public class RadioController extends Controller{
                 new BufferedReader(new InputStreamReader(
                         p.getInputStream()));
         String line = reader.readLine();
+        System.out.println(line);
         while (line != null) {
             line = reader.readLine();
+            System.out.println(line);
         }
     }
 
