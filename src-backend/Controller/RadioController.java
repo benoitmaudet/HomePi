@@ -3,6 +3,8 @@ package controller;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Collection;
+import java.util.HashSet;
 
 /**
  * HomePi
@@ -23,20 +25,26 @@ public class RadioController extends Controller{
     }
 
     public static void sendMessage(String message) throws IOException, InterruptedException {
-        System.out.println("In");
         Process p = Runtime.getRuntime().exec("chmod +x /var/www/HomePi/rf_utils/codesend");
         p.waitFor();
         p = Runtime.getRuntime().exec("/var/www/HomePi/rf_utils/codesend " + message);
         p.waitFor();
-        BufferedReader reader =
-                new BufferedReader(new InputStreamReader(
-                        p.getInputStream()));
-        String line = reader.readLine();
-        System.out.println(line);
-        while (line != null) {
-            line = reader.readLine();
+    }
+
+    public static Collection<String> captureMessage(int seconds) throws IOException, InterruptedException {
+        HashSet<String> result = new HashSet<String>();
+        Process p = Runtime.getRuntime().exec("chmod +x /var/www/HomePi/rf_utils/RFSniffer");
+        p.waitFor();
+        p = Runtime.getRuntime().exec("timeout "+seconds+"s /var/www/HomePi/rf_utils/RFSniffer");
+        p.waitFor();
+        BufferedReader buf = new BufferedReader(new InputStreamReader(p.getInputStream()));
+        String line = "";
+        while ( (line = buf.readLine() ) != null )
+        {
+            result.add(line);
             System.out.println(line);
         }
+        return result;
     }
 
     public static void main(String[] args) {
