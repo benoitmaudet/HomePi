@@ -36,7 +36,7 @@ public class RadioController extends Controller{
         Process p = Runtime.getRuntime().exec("chmod +x /var/www/HomePi/rf_utils/RFSniffer");
         p.waitFor();
         long timeout = System.currentTimeMillis() + seconds * 1000;
-        while(timeout < System.currentTimeMillis()) {
+        while(timeout > System.currentTimeMillis()) {
             p = Runtime.getRuntime().exec("/var/www/HomePi/rf_utils/RFSniffer");
             p.waitFor();
             BufferedReader buf = new BufferedReader(new InputStreamReader(p.getInputStream()));
