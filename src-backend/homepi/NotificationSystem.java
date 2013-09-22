@@ -16,8 +16,6 @@ public class NotificationSystem extends System implements Runnable {
 
     private static Collection<Notification> notifications = new HashSet<Notification>();
     private static Boolean ledIsActive = true;
-    private static LedController ledController = new LedController();
-
 
     public NotificationSystem() {
     }
@@ -75,29 +73,18 @@ public class NotificationSystem extends System implements Runnable {
                     }
                 }
                 switch (priority){
-                    case 0 : ledController.setColor("green");
+                    case 0 : LedController.flashGreen();
                         break;
-                    case 1 : ledController.setColor("blue");
+                    case 1 : LedController.flashBlue();
                         break;
-                    case 2 : ledController.setColor("red");
+                    case 2 : LedController.flashRed();
                         break;
-                }
-                try {
-                    ledController.switchOn();
-                    Thread.sleep(1000);
-                    ledController.switchOff();
-                } catch (Exception e) {
-                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                 }
             }
-            else
-            {
-                ledController.switchOff();
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-                }
+            try {
+                Thread.sleep(1000);
+            } catch (Exception e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
             }
         }
     }

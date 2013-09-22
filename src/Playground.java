@@ -1,4 +1,7 @@
-import controller.LedController;
+import homepi.HomePi;
+import homepi.Notification;
+
+import java.util.Date;
 
 /**
  * HomePi
@@ -16,22 +19,18 @@ public class Playground {
     public static void main(String[] args) throws InterruptedException{
 
         System.out.println("Hello world !");
-//        HomePi homePi = new HomePi();
-//        Notification notification = new Notification(0,"Nouvelle notification", new Date(),1);
-//        homePi.getNotificationSystem().addNotification(notification);
-//        new Thread(homePi.getNotificationSystem()).start();
-//        Thread.sleep(5000);
-//        homePi.getNotificationSystem().removeNotification(notification);
-//        notification = new Notification(1,"Nouvelle notification", new Date(),1);
-//        homePi.getNotificationSystem().addNotification(notification);
-//        Thread.sleep(5000);
-//        notification = new Notification(2,"Nouvelle notification", new Date(),1);
-//        homePi.getNotificationSystem().addNotification(notification);
-//        Thread.sleep(5000);
-//        homePi.getNotificationSystem().removeAllNotification();
-
-        LedController.setColor("red");
-        LedController.flash();
-
+        HomePi homePi = new HomePi();
+        Notification notification = new Notification(0,"Nouvelle notification", new Date(),1);
+        homePi.getNotificationSystem().addNotification(notification);
+        new Thread(homePi.getNotificationSystem()).start();
+        Thread.sleep(5000);
+        homePi.getNotificationSystem().removeNotification(notification);
+        notification = new Notification(1,"Nouvelle notification", new Date(),1);
+        homePi.getNotificationSystem().addNotification(notification);
+        Thread.sleep(5000);
+        notification = new Notification(2,"Nouvelle notification", new Date(),1);
+        homePi.getNotificationSystem().addNotification(notification);
+        Thread.sleep(5000);
+        homePi.getNotificationSystem().removeAllNotification();
     }
 }
