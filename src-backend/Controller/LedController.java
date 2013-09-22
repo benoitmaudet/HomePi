@@ -32,9 +32,15 @@ public class LedController extends Controller{
         LedController.color = color;
     }
 
-    public static void flash(){
+    public static void flashRed(){
         pin3.pulse(1000, true); // set second argument to 'true' use a blocking call
+    }
+
+    public static void flashBlue(){
         pin4.pulse(1000, true); // set second argument to 'true' use a blocking call
+    }
+
+    public static void flashGreen(){
         pin5.pulse(1000, true); // set second argument to 'true' use a blocking call
     }
 
