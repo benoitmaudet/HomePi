@@ -31,20 +31,17 @@ public class RadioController extends Controller{
         p.waitFor();
     }
 
-    public static Collection<String> captureMessage(int seconds) throws IOException, InterruptedException {
+    public static Collection<String> captureMessage() throws IOException, InterruptedException {
         HashSet<String> result = new HashSet<String>();
         Process p = Runtime.getRuntime().exec("chmod +x /var/www/HomePi/rf_utils/RFSniffer");
         p.waitFor();
-        long timeout = System.currentTimeMillis() + seconds * 1000;
-        while(timeout > System.currentTimeMillis()) {
-            p = Runtime.getRuntime().exec("/var/www/HomePi/rf_utils/RFSniffer");
-            p.waitFor();
-            BufferedReader buf = new BufferedReader(new InputStreamReader(p.getInputStream()));
-            String line = "";
-            while ( (line = buf.readLine() ) != null )
-            {
-                result.add(line);
-            }
+        p = Runtime.getRuntime().exec("/var/www/HomePi/rf_utils/RFSniffer");
+        p.waitFor();
+        BufferedReader buf = new BufferedReader(new InputStreamReader(p.getInputStream()));
+        String line = "";
+        while ( (line = buf.readLine() ) != null )
+        {
+            result.add(line);
         }
         return result;
     }
