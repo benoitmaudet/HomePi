@@ -1,3 +1,4 @@
+import controlabledevice.RadioDevice;
 import controller.RadioController;
 
 import java.io.IOException;
@@ -19,9 +20,11 @@ public class Playground {
 
         System.out.println("Hello world !");
         try {
-            RadioController.sendMessage("5510485");
+            RadioDevice electricSocket1 = new RadioDevice("Prise1","5510485","5510484");
+            RadioDevice electricSocket2 = new RadioDevice("Prise2","5522775","5522772");
+            electricSocket2.switchOn();
             Thread.sleep(5000);
-            RadioController.sendMessage("5510484");
+            electricSocket2.switchOff();
             System.out.println("Start capture");
             System.out.println(RadioController.captureMessage());
         } catch (IOException e) {
