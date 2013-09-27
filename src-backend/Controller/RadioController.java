@@ -23,11 +23,18 @@ public class RadioController extends Controller{
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
-    public static void sendMessage(String message) throws IOException, InterruptedException {
-        Process p = Runtime.getRuntime().exec("chmod +x /var/www/HomePi/rf_utils/codesend");
-        p.waitFor();
-        p = Runtime.getRuntime().exec("/var/www/HomePi/rf_utils/codesend " + message);
-        p.waitFor();
+    public static void sendMessage(String message) {
+        Process p = null;
+        try {
+            p = Runtime.getRuntime().exec("chmod +x /var/www/HomePi/rf_utils/codesend");
+            p.waitFor();
+            p = Runtime.getRuntime().exec("/var/www/HomePi/rf_utils/codesend " + message);
+            p.waitFor();
+        } catch (IOException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (InterruptedException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
     }
 
     public static HashMap<String, Integer> captureMessage() throws IOException, InterruptedException {
@@ -40,12 +47,13 @@ public class RadioController extends Controller{
         String line = "";
         while ( (line = buf.readLine() ) != null )
         {
-            if(result.containsKey(line)){
-                result.put(line,result.get(line)+1);
+            String code = line.replace("Received ","");
+            if(result.containsKey(code)){
+                result.put(code,result.get(code)+1);
             }
             else
             {
-                result.put(line, 1);
+                result.put(code, 1);
             }
         }
         return result;
